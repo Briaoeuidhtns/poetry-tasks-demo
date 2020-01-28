@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "poetry-tasks"
+version = "0.1.0"
+description = ""
+authors = ["Brian Brunner <brian.brunner.bb@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+invoke = "^1.4.0"
+
+[tool.poetry.scripts]
+task = "poetry_tasks:task"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
